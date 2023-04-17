@@ -65,16 +65,26 @@ public class payload {
 				+ "}";
 	}
 	
-	public static String addBookJson() {
+	public static String addBookJson(String isbn, String aisle) {
 		String addBook = "{\r\n"
 				+ "\r\n"
 				+ "\"name\":\"Learn Appium Automation with Java1\",\r\n"
-				+ "\"isbn\":\"bcdaf1\",\r\n"
-				+ "\"aisle\":\"22174\",\r\n"
+				+ "\"isbn\":\""+isbn +"\",\r\n"
+				+ "\"aisle\":\""+aisle+"\",\r\n"
 				+ "\"author\":\"John foe1\"\r\n"
 				+ "}";
 		
 		return addBook;
 	}
+	
+	public static String deleteBook(String id) {
+		String deleteBook = "{\r\n"
+				+ "\"ID\" : \""+id+"\"\r\n"
+				+ "} \r\n"
+				+ "";
+		
+		return deleteBook;
+	}
+	
 
 }
