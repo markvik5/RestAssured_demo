@@ -64,6 +64,34 @@ public class payload {
 				+ "  ]\r\n"
 				+ "}";
 	}
+	public static String check() {
+		return "[\r\n"
+				+ "	{\r\n"
+				+ "		\"self\": \"http://localhost:8080/rest/api/2/attachment/10024\",\r\n"
+				+ "		\"id\": \"10024\",\r\n"
+				+ "		\"filename\": \"jira.txt\",\r\n"
+				+ "		\"author\": {\r\n"
+				+ "			\"self\": \"http://localhost:8080/rest/api/2/user?username=vikash.kunj1996\",\r\n"
+				+ "			\"name\": \"vikash.kunj1996\",\r\n"
+				+ "			\"key\": \"JIRAUSER10000\",\r\n"
+				+ "			\"emailAddress\": \"vikash.kunj1996@gmail.com\",\r\n"
+				+ "			\"avatarUrls\": {\r\n"
+				+ "				\"48x48\": \"http://localhost:8080/secure/useravatar?avatarId=10341\",\r\n"
+				+ "				\"24x24\": \"http://localhost:8080/secure/useravatar?size=small&avatarId=10341\",\r\n"
+				+ "				\"16x16\": \"http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10341\",\r\n"
+				+ "				\"32x32\": \"http://localhost:8080/secure/useravatar?size=medium&avatarId=10341\"\r\n"
+				+ "			},\r\n"
+				+ "			\"displayName\": \"vikash.kunj1996@gmail.com\",\r\n"
+				+ "			\"active\": true,\r\n"
+				+ "			\"timeZone\": \"Asia/Calcutta\"\r\n"
+				+ "		},\r\n"
+				+ "		\"created\": \"2023-04-19T23:53:13.778+0530\",\r\n"
+				+ "		\"size\": 30,\r\n"
+				+ "		\"mimeType\": \"text/plain\",\r\n"
+				+ "		\"content\": \"http://localhost:8080/secure/attachment/10024/jira.txt\"\r\n"
+				+ "	}\r\n"
+				+ "]";	
+		}
 	
 	public static String addBookJson(String isbn, String aisle) {
 		String addBook = "{\r\n"
@@ -85,6 +113,8 @@ public class payload {
 		
 		return deleteBook;
 	}
+	
+	
 	
 
 }

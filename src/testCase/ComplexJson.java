@@ -13,7 +13,7 @@ public class ComplexJson {
 		System.out.println(pa);
 
 		// size of the array
-		int courseSize = js.getInt("courses.size()");
+		int courseSize = js.getInt("courses[].size()");
 		System.out.println(courseSize);
 
 		// title of first course

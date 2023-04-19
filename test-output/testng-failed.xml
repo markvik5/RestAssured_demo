@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dynamicJson.DynamicJson">
+      <class name="jiraTest.Jira_Test_first">
         <methods>
-          <include name="addBook"/>
+          <include name="endtoendFlow"/>
         </methods>
-      </class> <!-- dynamicJson.DynamicJson -->
+      </class> <!-- jiraTest.Jira_Test_first -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
